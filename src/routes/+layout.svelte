@@ -26,6 +26,7 @@
 	<meta name="twitter:title" content="FCG - CLearn">
 	<meta name="twitter:description" content="CLearn ist eine LernPlattform von FCG. Wir bieten viele Arten zu lernen unteranderem auch kleinere Spiele.">
 	<meta name="twitter:image" content="https://clearn-iota.vercel.app/_app/immutable/assets/fcg.CUGjIfqq.png">
+	<meta name="theme-color" content="#74daff">
 </svelte:head>
 
 {@render children()}

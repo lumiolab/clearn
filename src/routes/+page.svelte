@@ -1,6 +1,7 @@
 <script>
 	import { goto } from "$app/navigation";
     import favicon from '$lib/assets/fcg.png';
+    import title from '$lib/assets/title.png';
 
     const features = [
         {
@@ -23,18 +24,22 @@
         const team = [
         {
             name: "Lumio",
-            role: "Software und Web Entwickler"
+            role: "Software und Web Entwickler",
+            pic: "https://mc-heads.net/head/lumiodev"
         },
         {
             name: "Luraxx",
-            role: "Kreativer Designer"
+            role: "Kreativer Designer",
+            pic: "https://mc-heads.net/head/luraxxyt"
         },
     ]
+
+    const lumioPic = "https://mc-heads.net/head/lumiodev"
 
 </script>
 
 <div class="bg-black text-white min-h-screen w-full flex flex-col items-center justify-center gap-2 py-20">
-    <h1 class="transition-all text-transparent bg-linear-to-tr from-blue-700 to-teal-200 text-4xl md:text-5xl lg:text-6xl bg-clip-text font-semibold tracking-wide px-8 pt-8">CLearn</h1>
+    <img src="{title}" alt="TITLE">
     <p class="text-neutral-300 font-light text-xl text-center sm:text-xs md:text-lg">Eine Emulator-basierte Plattform zum Zugriff auf verschiedene Schul-Lern-Apps.<br>Dank unserer Technologie haben viele Schüler ihre Noten deutlich verbessert.</p>
     <button onclick={() => {
         goto("/emulator")
@@ -64,10 +69,11 @@
         <div class="flex flex-col items-center justify-center gap-4">
             {#each team as member}
 
-            <div class="w-full h-full bg-neutral-950 p-5 text-center border border-neutral-700 transition-all duration-50 hover:scale-95 hover:border-0 rounded-lg">
+            <div class="w-full h-full bg-neutral-950 p-5 text-center border border-neutral-700 transition-all duration-120 hover:border-0 rounded-lg flex flex-col items-center justify-center">
 
                 <h2 class="text-xl md:text-1xl lg:text-2xl font-bold text-transparent bg-clip-text bg-linear-to-tr from-red-400 to-red-700">{member.name}</h2>
                 <p class="text-neutral-300 font-light text-xl text-center sm:text-xs md:text-lg"><span class="font-bold">{member.role}</span></p>
+                <img src="{member.pic}" alt="Profile Pic">
             </div>
                 
             {/each}
