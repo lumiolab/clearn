@@ -4,8 +4,8 @@
 
 </script>
 
-<div class="bg-neutral-800 text-white h-screen w-screen flex flex-col items-center justify-center gap-2">
-    <h1 class="transition-all text-transparent bg-linear-to-tr from-indigo-700 to-indigo-300 text-4xl md:text-5xl lg:text-6xl font-bold bg-clip-text">CLearn</h1>
+<div class="bg-black text-white h-screen w-screen flex flex-col items-center justify-center gap-2">
+    <h1 class="transition-all text-transparent bg-linear-to-tr from-blue-900 to-teal-400 text-4xl md:text-5xl lg:text-6xl font-bold bg-clip-text">CLearn</h1>
     <p class="text-neutral-300 font-light text-xl text-center sm:text-xs md:text-lg">Eine Emulator-basierte Plattform zum Zugriff auf verschiedene Schul-Lern-Apps.<br>Dank unserer Technologie haben viele Schüler ihre Noten deutlich verbessert.</p>
     <button onclick={() => {
         goto("/emulator")
